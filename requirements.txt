@@ -1,2 +1,6 @@
 streamlit==1.28.0
 requests==2.31.0
+openai-whisper==20250625
+openpyxl==3.11.0
+pydub==0.25.1
+python-dotenv==1.0.0
