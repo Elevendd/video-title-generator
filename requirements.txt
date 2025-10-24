@@ -1,6 +1,36 @@
 streamlit==1.28.0
 requests==2.31.0
-openai-whisper==20250625
 openpyxl==3.11.0
-pydub==0.25.1
+python-dotenv==1.0.0
+```
+
+**注意：移除了：**
+- ❌ `openai-whisper`（Streamlit Cloud 不支持）
+- ❌ `pydub`（需要 FFmpeg）
+
+---
+
+## 重要改动
+
+由于 Streamlit Cloud 无法运行 Whisper，我们需要调整策略：
+
+### **改为只保留这些功能：**
+
+1. ✅ 手动文本输入（替代语音转文字）
+2. ✅ 文本编辑框
+3. ✅ AI 标题生成（两个模型）
+4. ✅ 三个平台适配
+5. ✅ Excel 导出
+
+---
+
+## 现在就做
+
+### 第 1 步：更新 `requirements.txt`
+
+在 GitHub 中更新为：
+```
+streamlit==1.28.0
+requests==2.31.0
+openpyxl==3.11.0
 python-dotenv==1.0.0
